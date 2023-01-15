@@ -51,24 +51,25 @@ export default function NavBar() {
               </Nav.Item>
               <Nav.Item>
                 <Link
+                  to={"Skills"}
+                  spy={true}
+                  activeClass="active"
+                  className="nav-link"
+                  onClick={closeExpanded}
+                  >
+                  Skills
+                </Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link
                   to={"About"}
                   spy={true}
                   activeClass="active"
                   className="nav-link"
                   onClick={closeExpanded}
                 >
+                  
                   About Me
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
-                  to={"Skills"}
-                  spy={true}
-                  activeClass="active"
-                  className="nav-link"
-                  onClick={closeExpanded}
-                >
-                  Skills
                 </Link>
               </Nav.Item>
               <Nav.Item>
