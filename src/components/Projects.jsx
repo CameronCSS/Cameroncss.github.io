@@ -94,7 +94,7 @@ export default function Projects() {
               
               {data.length > 3 && (
                 <Container className="text-center mt-5">
-                  <Link to="/All-Projects">
+                  <a href="https://github.com/CameronCSS/PersonalProjects" target="_blank">
                     <Button
                       size="lg"
                       variant={
@@ -103,7 +103,7 @@ export default function Projects() {
                     >
                       All <FaGithub /> Projects
                     </Button>
-                  </Link>
+                  </a>
                   
                 </Container>
               )}
