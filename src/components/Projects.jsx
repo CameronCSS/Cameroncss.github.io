@@ -93,7 +93,7 @@ export default function Projects() {
               
               {data.length > 3 && (
                 <Container className="text-center mt-5">
-                  <a href="https://github.com/CameronCSS/PersonalProjects" target="_blank">
+                  <a href="https://github.com/CameronCSS/PersonalProjects">
                     <Button
                       size="lg"
                       variant={
