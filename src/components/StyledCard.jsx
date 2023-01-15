@@ -26,6 +26,7 @@ const StyledCardComponent = styled.div`
 export default function StyledCard({ theme, image, name, description, url }) {
   return (
     <StyledCardComponent>
+      <a href={url}>
       <Card bg={theme === "light" ? "white" : "dark"}>
         <Card.Img
           variant="top"
@@ -36,14 +37,12 @@ export default function StyledCard({ theme, image, name, description, url }) {
         <Card.Body className="overflow-auto text-center">
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
-        </Card.Body>
-        <Card.Footer className="text-center">
-          <Card.Link href={url}>
-            {"View on GitHub "}
+          <Card.Link>
             <FaGithub />
           </Card.Link>
-        </Card.Footer>
+          </Card.Body>
       </Card>
+      </a>
     </StyledCardComponent>
   );
 }

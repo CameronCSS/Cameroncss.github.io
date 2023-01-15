@@ -121,7 +121,7 @@ export const projectCardImages = [
   },
   {
     name: "PersonalProjects",
-    image: Logo,
+    image: Logoog,
   },
 
 ];
