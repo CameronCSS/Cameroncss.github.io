@@ -51,7 +51,7 @@ export default function AboutMe() {
             </Col>
             {resume && (
             <div className="d-flex justify-content-center">
-            <a href={resume}>
+            <a href={resume} target="_blank">
               <Button size="lg" className="mt-2 mb-5">
                 Resume
               </Button>
