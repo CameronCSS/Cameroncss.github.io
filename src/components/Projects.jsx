@@ -7,12 +7,14 @@ import {
   selectIsLoading,
 } from "../pages/allProjectsSlice";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { Element } from "react-scroll";
 import styled from "styled-components";
 // Data
 import { filteredProjects } from "../data";
 // Icons
 import { FaGithub } from "react-icons/fa";
+import { FaChevronCircleDown } from "react-icons/fa";
 // Components
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
@@ -89,6 +91,7 @@ export default function Projects() {
                   );
                 })}
               </Row>
+              
               {data.length > 3 && (
                 <Container className="text-center mt-5">
                   <Link to="/All-Projects">
@@ -101,10 +104,20 @@ export default function Projects() {
                       All <FaGithub /> Projects
                     </Button>
                   </Link>
+                  
                 </Container>
               )}
             </>
-          )}
+            
+          )}         
+          <Row className="align-items-end down-container">
+          <Col className="m-4 text-center">
+            <ScrollLink to={"Contact"} className="link-icons">
+              <FaChevronCircleDown />
+            </ScrollLink>
+          </Col>
+        </Row>
+          
         </Container>
       </StyledSection>
     </Element>

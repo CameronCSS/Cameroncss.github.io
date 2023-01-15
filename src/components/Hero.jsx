@@ -103,7 +103,7 @@ export default function Hero() {
         </Row>
         <Row className="align-items-end down-container">
           <Col className="m-4 text-center">
-            <Link to={"About"} className="link-icons">
+            <Link to={"Skills"} className="link-icons">
               <FaChevronCircleDown />
             </Link>
           </Col>

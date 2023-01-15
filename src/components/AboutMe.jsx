@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { useSelector } from "react-redux";
 import { selectData } from "../pages/homeSlice";
 import { Element } from "react-scroll";
+import { Link } from "react-scroll";
+import { FaChevronCircleDown } from "react-icons/fa";
 // Data
 import { moreInfo } from "../data";
 // Components
@@ -48,8 +50,18 @@ export default function AboutMe() {
               />
             </Col>
           </Row>
+          <Row className="align-items-end down-container">
+          <Col className="m-4 text-center">
+            <Link to={"Projects"} className="link-icons">
+              <FaChevronCircleDown />
+            </Link>
+          </Col>
+        </Row>
         </Container>
       </StyledAboutMe>
     </Element>
+    
+    
   );
 }
+

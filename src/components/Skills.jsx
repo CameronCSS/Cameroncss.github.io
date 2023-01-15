@@ -1,5 +1,7 @@
 import { useAppContext } from "../appContext";
 import { Element } from "react-scroll";
+import { Link } from "react-scroll";
+import { FaChevronCircleDown } from "react-icons/fa";
 // Data
 import { skillData, resume } from "../data";
 // Components
@@ -39,9 +41,19 @@ export default function Skills() {
                 R&eacute;sum&eacute;
               </Button>
             </a>
+            
+            
           )}
+                  <Row className="align-items-end down-container">
+          <Col className="m-4 text-center">
+            <Link to={"About"} className="link-icons">
+              <FaChevronCircleDown />
+            </Link>
+          </Col>
+        </Row>
         </Container>
       </section>
     </Element>
+    
   );
 }
