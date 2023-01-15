@@ -81,7 +81,7 @@ const StyledHero = styled.header`
 `;
 
 export default function Hero() {
-  const { name } = useSelector(selectData);
+  const { name, bio } = useSelector(selectData);
 
   return (
     <StyledHero>
@@ -89,6 +89,9 @@ export default function Hero() {
         <Row className="align-items-center text-center">
           <Col>
             <h1 className="mb-3 display-3 title">{name}</h1>
+            <div className="d-flex align-items-center justify-content-center">
+            <p className="text-center m-7">-{bio}</p>
+            </div>
             <div className="d-flex align-items-center justify-content-center">
               <SocialLinks />
             </div>
