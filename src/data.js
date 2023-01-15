@@ -74,7 +74,7 @@ export const skillData = [
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = null;
+export const resume = "https://docs.google.com/document/d/e/2PACX-1vS_OUdiDvbQCtnctV3ih1JdHsawKYk8PNGjyFXUwnEKYqbqeM01ifNlwX7l3U5zWPptq14A74yOQAVN/pub";
 
 /* Projects
  ************************************************************** 
@@ -116,7 +116,7 @@ export const projectCardImages = [
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "A data professional with a passion for visualization and storytelling, my goal is to utilize my skills in SQL, Power BI, and Python to turn complex data sets into easily understandable insights.";
+  "My goal is to utilize my skills in SQL, Power BI, Tableau and Python to turn complex data sets into easily understandable insights.";
 
 
 /* Contact Info

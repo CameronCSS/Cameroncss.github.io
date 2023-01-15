@@ -5,9 +5,9 @@ import { Element } from "react-scroll";
 import { Link } from "react-scroll";
 import { FaChevronCircleDown } from "react-icons/fa";
 // Data
-import { moreInfo } from "../data";
+import { moreInfo, resume } from "../data";
 // Components
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title } from "./globalStyledComponents";
 
 const StyledAboutMe = styled.section`
@@ -49,6 +49,16 @@ export default function AboutMe() {
                 style={{ width: "15rem", height: "15rem" }}
               />
             </Col>
+            {resume && (
+            <div className="d-flex justify-content-center">
+            <a href={resume}>
+              <Button size="lg" className="mt-2 mb-5">
+                Resume
+              </Button>
+            </a>
+          </div>
+            
+          )}
           </Row>
           <Row className="align-items-end down-container">
           <Col className="m-4 text-center">

@@ -31,19 +31,7 @@ export default function Skills() {
               );
             })}
           </Row>
-          {resume && (
-            <a href={resume}>
-              <Button
-                size="lg"
-                variant={theme === "light" ? "outline-dark" : "outline-light"}
-                className="mt-5"
-              >
-                R&eacute;sum&eacute;
-              </Button>
-            </a>
-            
-            
-          )}
+          
                   <Row className="align-items-end down-container">
           <Col className="m-4 text-center">
             <Link to={"About"} className="link-icons">
