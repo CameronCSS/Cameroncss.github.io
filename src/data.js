@@ -6,7 +6,7 @@ import {
   FaGithubSquare,
   FaLinkedin,
 } from "react-icons/fa";
-import { SiBlender, SiMysql, SiPowerbi } from "react-icons/si";
+import { SiBlender, SiMysql, SiPowerbi, SiTableau, SiVisualstudiocode } from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
 import Data from "./images/Data.jpg";
@@ -14,6 +14,7 @@ import SQL from "./images/SQL.PNG";
 import Programming from "./images/Programming.PNG";
 import Profile from "./images/Profile.PNG";
 import Logo from "./images/logo.svg";
+import Logoog from "./images/logo spin.png";
 
 // Hero Images (add your images to the /images directory with the same names)
 import Light from "./images/hero-light.jpg";
@@ -39,12 +40,12 @@ export const skillData = [
   {
     id: 1,
     skill: <SiMysql className="display-4" />,
-    name: "MySQL",
+    name: "SQL",
   },
   {
     id: 2,
-    skill: <FaPython className="display-4" />,
-    name: "Python",
+    skill: <SiTableau className="display-4" />,
+    name: "Tableau",
   },
   {
     id: 3,
@@ -53,8 +54,8 @@ export const skillData = [
   },
   {
     id: 4,
-    skill: <SiBlender className="display-4" />,
-    name: "Blender",
+    skill: <FaPython className="display-4" />,
+    name: "Python",
   },
   {
     id: 5,
@@ -63,13 +64,23 @@ export const skillData = [
   },
   {
     id: 6,
-    skill: <FaHtml5 className="display-4" />,
-    name: "HTML5",
+    skill: <SiBlender className="display-4" />,
+    name: "Blender",
   },
   {
     id: 7,
     skill: <FaGithubSquare className="display-4" />,
     name: "GitHub",
+  },
+  {
+    id: 8,
+    skill: <SiVisualstudiocode className="display-4" />,
+    name: "Visualstudio",
+  },
+  {
+    id: 9,
+    skill: <FaHtml5 className="display-4" />,
+    name: "HTML5",
   },
 ];
 
@@ -102,10 +113,14 @@ export const projectCardImages = [
   },
   {
     name: "CameronCSS.github.io",
-    image: Logo,
+    image: Logoog,
   },
   {
     name: "react-deploy",
+    image: Logo,
+  },
+  {
+    name: "PersonalProjects",
     image: Logo,
   },
 
