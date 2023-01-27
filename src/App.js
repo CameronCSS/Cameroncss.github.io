@@ -80,11 +80,11 @@ export default function App() {
         <ThemeProvider theme={themes[theme]}>
           <ScrollToTop />
           <GlobalStyles />
-          <Switch>
+          <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/All-Projects" element={<AllProjects />} />
             <Route path="*" element={<NotFound />} />
-          </Switch>
+          </Routes>
         </ThemeProvider>
       </HashRouter>
     );
