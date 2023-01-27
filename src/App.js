@@ -7,7 +7,7 @@ import {
   selectIsLoading,
 } from "./pages/homeSlice";
 import { fetchGitHubReops } from "./pages/allProjectsSlice";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 // Components
 import { Container } from "react-bootstrap";
@@ -80,11 +80,11 @@ export default function App() {
         <ThemeProvider theme={themes[theme]}>
           <ScrollToTop />
           <GlobalStyles />
-          <Routes>
+          <Switch>
             <Route exact path="/" element={<Home />} />
             <Route path="/All-Projects" element={<AllProjects />} />
             <Route path="*" element={<NotFound />} />
-          </Routes>
+          </Switch>
         </ThemeProvider>
       </HashRouter>
     );
