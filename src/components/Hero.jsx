@@ -6,7 +6,6 @@ import styled from "styled-components";
 import { FaChevronCircleDown } from "react-icons/fa";
 // Media
 import Logo from "../images/logo spin.png";
-import { Light, Dark } from "../data";
 // Components
 import { Col, Container, Row } from "react-bootstrap";
 import { Spin } from "./globalStyledComponents";
@@ -59,25 +58,6 @@ const StyledHero = styled.header`
     }
   }
 
-  @media screen and (min-width: 1180px) {
-    &::before {
-      background: ${({ theme }) =>
-        theme.name === "light"
-          ? `url(${Light}) top center fixed no-repeat`
-          : `url(${Dark}) top center fixed no-repeat`};
-      background-size: 100vw auto;
-    }
-  }
-
-  @media screen and (min-width: 1367px) {
-    &::before {
-      background: ${({ theme }) =>
-        theme.name === "light"
-          ? `url(${Light}) center center fixed no-repeat`
-          : `url(${Dark}) center center fixed no-repeat`};
-      background-size: cover;
-    }
-  }
 `;
 
 export default function Hero() {
