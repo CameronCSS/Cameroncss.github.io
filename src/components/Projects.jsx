@@ -111,7 +111,7 @@ export default function Projects() {
           )}         
           <Row className="align-items-end down-container">
           <Col className="m-4 text-center">
-            <ScrollLink to={"Contact"} className="link-icons">
+            <ScrollLink to={"About"} className="link-icons">
               <FaChevronCircleDown />
             </ScrollLink>
           </Col>

@@ -62,18 +62,6 @@ export default function NavBar() {
               </Nav.Item>
               <Nav.Item>
                 <Link
-                  to={"About"}
-                  spy={true}
-                  activeClass="active"
-                  className="nav-link"
-                  onClick={closeExpanded}
-                >
-                  
-                  About Me
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
                   to={"Projects"}
                   spy={true}
                   activeClass="active"
@@ -81,6 +69,18 @@ export default function NavBar() {
                   onClick={closeExpanded}
                 >
                   Projects
+                </Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link
+                  to={"About"}
+                  spy={true}
+                  activeClass="active"
+                  className="nav-link"
+                  onClick={closeExpanded}
+                >
+                                    
+                  About Me
                 </Link>
               </Nav.Item>
               <Nav.Item>

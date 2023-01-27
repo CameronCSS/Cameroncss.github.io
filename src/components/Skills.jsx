@@ -34,7 +34,7 @@ export default function Skills() {
           
                   <Row className="align-items-end down-container">
           <Col className="m-4 text-center">
-            <Link to={"About"} className="link-icons">
+            <Link to={"Projects"} className="link-icons">
               <FaChevronCircleDown />
             </Link>
           </Col>

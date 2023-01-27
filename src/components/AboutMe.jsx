@@ -61,7 +61,7 @@ export default function AboutMe() {
           </Row>
           <Row className="align-items-end down-container">
           <Col className="m-4 text-center">
-            <Link to={"Projects"} className="link-icons">
+            <Link to={"Contact"} className="link-icons">
               <FaChevronCircleDown />
             </Link>
           </Col>
