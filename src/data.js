@@ -131,7 +131,7 @@ export const projectCardImages = [
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "An passionate data analyst dedicated to uncovering valuable insights hidden within complex data sets. I strive to make data more accessible and actionable utilizing my proficiency in SQL, Power BI, Tableau, and Python.";
+  "Strong problem solver, ability to identify and analyze complex issues, self motivated, endlessly looking to improve. My goal is to utilize my skills in SQL, Power BI, Tableau, and Python to turn complex data sets into easy to understand visuals that get everyone interested in the insights.";
 
 
 /* Contact Info
