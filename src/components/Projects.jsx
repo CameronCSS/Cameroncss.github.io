@@ -92,7 +92,22 @@ export default function Projects() {
               </Row>
               
               {data.length > 3 && (
-                <Container className="text-center mt-5">
+                <Container className="text-center mt-4">
+                  <a href="https://cameroncss.github.io/Data-Analysis/Netflix/index.html ">
+                    <Button
+                      size="lg"
+                      variant={
+                        theme === "light" ? "outline-dark" : "outline-light"
+                      }
+                    >
+                      Netflix Interactive Dashboard 
+                    </Button>
+                  </a>
+                  
+                </Container>
+              )}
+              {data.length > 3 && (
+                <Container className="text-center mt-2">
                   <a href="https://github.com/CameronCSS/PersonalProjects">
                     <Button
                       size="lg"
