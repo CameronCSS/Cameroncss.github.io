@@ -17,3 +17,7 @@
 *.py linguist-detectable=true
 *.py linguist-documentation=false
 *.py linguist-language=python
+
+asset-manifest.json linguist-language=javascript
+manifest.json linguist-language=javascript
+service-worker.js linguist-language=javascript
