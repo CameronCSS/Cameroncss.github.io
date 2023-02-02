@@ -90,9 +90,22 @@ export default function Projects() {
                   );
                 })}
               </Row>
-              
               {data.length > 3 && (
                 <Container className="text-center mt-4">
+                  <a href="https://github.com/CameronCSS/Data-Analysis/tree/main/Power-BI-Dashboards">
+                    <Button
+                      size="lg"
+                      variant={
+                        theme === "light" ? "outline-dark" : "outline-light"
+                      }
+                    >
+                      Power BI Dashboards
+                    </Button>
+                  </a>
+                </Container>
+              )}
+              {data.length > 3 && (
+                <Container className="text-center mt-3">
                   <a href="https://cameroncss.github.io/Data-Analysis/Netflix/index.html ">
                     <Button
                       size="lg"
@@ -100,14 +113,14 @@ export default function Projects() {
                         theme === "light" ? "outline-dark" : "outline-light"
                       }
                     >
-                      Netflix Interactive Dashboard 
+                      Netflix Tableau Dashboard 
                     </Button>
                   </a>
                   
                 </Container>
               )}
               {data.length > 3 && (
-                <Container className="text-center mt-2">
+                <Container className="text-center mt-3">
                   <a href="https://github.com/CameronCSS/PersonalProjects">
                     <Button
                       size="lg"
