@@ -14,6 +14,7 @@ import { filteredProjects } from "../data";
 // Icons
 import { FaGithub } from "react-icons/fa";
 import { FaChevronCircleDown } from "react-icons/fa";
+import { SiTableau, SiPowerbi } from "react-icons/si"
 // Components
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Title, Loading } from "./globalStyledComponents";
@@ -92,14 +93,14 @@ export default function Projects() {
               </Row>
               {data.length > 3 && (
                 <Container className="text-center mt-4">
-                  <a href="https://github.com/CameronCSS/Data-Analysis/tree/main/Power-BI-Dashboards">
+                  <a href="https://app.powerbi.com/reportEmbed?reportId=9e4f41e7-2fe2-4e59-aade-0adc90ac6e98&autoAuth=true&ctid=ac060c52-a55a-40ca-9f98-cef91bfc7881">
                     <Button
                       size="lg"
                       variant={
                         theme === "light" ? "outline-dark" : "outline-light"
                       }
                     >
-                      Power BI Dashboards
+                     'Data Survey' <SiPowerbi /> Dashboard
                     </Button>
                   </a>
                 </Container>
@@ -113,7 +114,7 @@ export default function Projects() {
                         theme === "light" ? "outline-dark" : "outline-light"
                       }
                     >
-                      Netflix Tableau Dashboard 
+                      'Netflix' <SiTableau /> Dashboard
                     </Button>
                   </a>
                   
@@ -128,7 +129,7 @@ export default function Projects() {
                         theme === "light" ? "outline-dark" : "outline-light"
                       }
                     >
-                      All <FaGithub /> Projects
+                      View <FaGithub /> Portfolio
                     </Button>
                   </a>
                   
