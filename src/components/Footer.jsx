@@ -20,7 +20,8 @@ export default function Footer() {
   return (
     <StyledFooter className="d-flex align-items-center justify-content-center p-2">
       <SocialLinks />
-      <p className="text-center text-white m-0">Thank you for Visiting!</p>
+      <p className="text-center text-white m-2">Currently looking for new Opportunities.</p>
+      <p className="text-center text-white m-2">Thanks for Visiting!</p>
     </StyledFooter>
   );
 }

@@ -1,12 +1,9 @@
 // Skills icons - https://react-icons.github.io/react-icons/
 import {
-  FaHtml5,
   FaPython,
-  FaReact,
-  FaGithubSquare,
   FaLinkedin,
 } from "react-icons/fa";
-import { SiBlender, SiMysql, SiPowerbi, SiTableau, SiVisualstudiocode } from "react-icons/si";
+import { SiBlender, SiMysql, SiPowerbi, SiTableau, SiVisualstudiocode, SiJava, SiAdobephotoshop, SiR } from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
 import Data from "./images/Data.jpg";
@@ -44,13 +41,13 @@ export const skillData = [
   },
   {
     id: 2,
-    skill: <SiTableau className="display-4" />,
-    name: "Tableau",
+    skill: <SiPowerbi className="display-4" />,
+    name: "PowerBI",
   },
   {
     id: 3,
-    skill: <SiPowerbi className="display-4" />,
-    name: "PowerBI",
+    skill: <SiTableau className="display-4" />,
+    name: "Tableau",
   },
   {
     id: 4,
@@ -59,8 +56,8 @@ export const skillData = [
   },
   {
     id: 5,
-    skill: <FaReact className="display-4" />,
-    name: "React",
+    skill: <SiJava className="display-4" />,
+    name: "Java",
   },
   {
     id: 6,
@@ -69,8 +66,8 @@ export const skillData = [
   },
   {
     id: 7,
-    skill: <FaGithubSquare className="display-4" />,
-    name: "GitHub",
+    skill: <SiR className="display-4" />,
+    name: "R",
   },
   {
     id: 8,
@@ -79,8 +76,8 @@ export const skillData = [
   },
   {
     id: 9,
-    skill: <FaHtml5 className="display-4" />,
-    name: "HTML5",
+    skill: <SiAdobephotoshop className="display-4" />,
+    name: "Adobephotoshop",
   },
 ];
 
