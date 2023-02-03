@@ -1,41 +1,23 @@
-import React from "react";
-import { Element } from "react-scroll";
-import { useSelector } from "react-redux";
-import { selectData } from "../pages/homeSlice";
-// Components
-import NavBar from "../components/NavBar";
-import Hero from "../components/Hero";
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
-import AboutMe from "../components/AboutMe";
-import Contact from "../components/Contact";
-import { BackToTop } from "../components/globalStyledComponents";
-import Footer from "../components/Footer";
+//import React from "react";
+//import { Element } from "react-scroll";
+import { useEffect } from "react";
+//import { useSelector } from "react-redux";
+//import { selectData } from "../pages/homeSlice";
+// Components"
+//import NavBar from "../components/NavBar";
+//import Hero from "../components/Hero";
+//import Skills from "../components/Skills";
+//import Projects from "../components/Projects";
+//import AboutMe from "../components/AboutMe";
+//import Contact from "../components/Contact";
+//import { BackToTop } from "../components/globalStyledComponents";
+//import Footer from "../components/Footer";
+
 
 export default function Home() {
-  const { name } = useSelector(selectData);
+  useEffect(() => {
+    window.location.replace("https://github.com/CameronCSS/PersonalProjects/blob/main/README.md");
+  }, []);
 
-  React.useEffect(
-    function () {
-      document.title = `${name} | Portfolio`;
-    },
-    [name]
-  );
-
-  return (
-    <>
-      <Element name={"Home"} id="home">
-        <NavBar />
-        <Hero />
-      </Element>
-      <main>
-        <Skills />
-        <Projects />
-        <AboutMe />
-        <Contact />
-      </main>
-      <BackToTop home={"Home"} />
-      <Footer />
-    </>
-  );
+  return null;
 }
